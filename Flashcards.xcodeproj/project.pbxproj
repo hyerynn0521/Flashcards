@@ -16,6 +16,7 @@
 		E042E02827D31A6E00FA4B2E /* FlashcardsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E042E02727D31A6E00FA4B2E /* FlashcardsTests.swift */; };
 		E042E03227D31A6E00FA4B2E /* FlashcardsUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E042E03127D31A6E00FA4B2E /* FlashcardsUITests.swift */; };
 		E042E03427D31A6E00FA4B2E /* FlashcardsUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E042E03327D31A6E00FA4B2E /* FlashcardsUITestsLaunchTests.swift */; };
+		E042E04127D320A300FA4B2E /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = E042E04027D320A300FA4B2E /* README.md */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +50,7 @@
 		E042E02D27D31A6E00FA4B2E /* FlashcardsUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FlashcardsUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		E042E03127D31A6E00FA4B2E /* FlashcardsUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlashcardsUITests.swift; sourceTree = "<group>"; };
 		E042E03327D31A6E00FA4B2E /* FlashcardsUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlashcardsUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		E042E04027D320A300FA4B2E /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -106,6 +108,7 @@
 				E042E01927D31A6E00FA4B2E /* Assets.xcassets */,
 				E042E01B27D31A6E00FA4B2E /* LaunchScreen.storyboard */,
 				E042E01E27D31A6E00FA4B2E /* Info.plist */,
+				E042E04027D320A300FA4B2E /* README.md */,
 			);
 			path = Flashcards;
 			sourceTree = "<group>";
@@ -233,6 +236,7 @@
 			files = (
 				E042E01D27D31A6E00FA4B2E /* LaunchScreen.storyboard in Resources */,
 				E042E01A27D31A6E00FA4B2E /* Assets.xcassets in Resources */,
+				E042E04127D320A300FA4B2E /* README.md in Resources */,
 				E042E01827D31A6C00FA4B2E /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
