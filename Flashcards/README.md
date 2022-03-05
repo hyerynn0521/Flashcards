@@ -9,7 +9,7 @@ A flashcard app that shows question and answer when tapped
 
 ### App Walk-though
 
-<img src="YOUR_GIF_URL_HERE" width=200><br>
+<img src="https://imgur.com/a/WtvT57i" width=200><br>
 
 ## Required
 - [x] Create New Project in Xcode
