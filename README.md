@@ -30,7 +30,7 @@ A flashcard app that shows question and answer when tapped
 
 ### App Walk-though
 
-<img src="./ezgif.com-gif-maker (3).gif" width=200><br>
+<img src="./lab1.gif" width=200><br>
 
 ## Required
 - [x] Create New Project in Xcode
