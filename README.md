@@ -7,7 +7,7 @@ Simple Flashcard app that lets you customize question and answer
 
 ### App Walk-though
 
-<img src="YOUR_GIF_URL_HERE" width=200><br>
+<img src="./lab2.gif" width=200><br>
 
 ## Required
 - [x] User can open the creation screen
