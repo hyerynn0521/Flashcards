@@ -27,7 +27,7 @@ Simple Flashcard app that lets you customize question and answer
 
 ### App Walk-though
 
-<img src="YOUR_GIF_URL_HERE" width=200><br>
+<img src="./lab2.gif" width=200><br>
 
 ## Required
 - [x] User can open the creation screen
@@ -50,7 +50,7 @@ A flashcard app that shows question and answer when tapped
 
 ### App Walk-though
 
-<img src="./ezgif.com-gif-maker (3).gif" width=200><br>
+<img src="./lab1.gif" width=200><br>
 
 ## Required
 - [x] Create New Project in Xcode
