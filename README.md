@@ -8,7 +8,7 @@ A Simple flashcards app that lets you save flashcards and come back to it later
 ### App Walk-though
 
 
-<img src="YOUR_GIF_URL_HERE" width=200><br>
+<img src="https://submissions.us-east-1.linodeobjects.com/mobile_app_design/YnCTl60J.gif" width=200><br>
 
 ## Required
 - [x] User can browse through multiple flashcards
