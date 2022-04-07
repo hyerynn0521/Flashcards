@@ -18,6 +18,7 @@ class ViewController: UIViewController {
     @IBOutlet weak var prevButton: UIButton!
     @IBOutlet weak var frontLabel: UILabel!
     @IBOutlet weak var backLabel: UILabel!
+    @IBOutlet weak var card: UIView!
     //Array to hold our flashcards
     var flashcards = [Flashcard]()
     //current flashcard index
@@ -28,8 +29,10 @@ class ViewController: UIViewController {
         if currentIndex > 0 {
             currentIndex = currentIndex - 1
         }
-        updateLabels()
+        //updateLabels()
         updateNextPrevButtons()
+        animateCardOut2()
+        
     }
     @IBAction func didTapOnNext(_ sender: Any) {
         //increase current index
@@ -39,10 +42,11 @@ class ViewController: UIViewController {
         
         
         //update labels
-        updateLabels()
+        
         
         //update buttons
         updateNextPrevButtons()
+        animateCardOut()
     }
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -68,16 +72,23 @@ class ViewController: UIViewController {
         creationController.flashCardsController = self
     }
 
+   
     @IBAction func didTapOnFlashcard(_ sender: Any) {
-        
-        if frontLabel.isHidden == true{
-            frontLabel.isHidden = false;
-            backLabel.isHidden = true;
-        } else{
-            backLabel.isHidden = false;
-            frontLabel.isHidden = true;
-        }
+        flipFlashcard();
        
+       
+    }
+    func flipFlashcard(){
+        UIView.transition(with: card, duration: 0.3, options: .transitionFlipFromRight, animations: {
+            if self.frontLabel.isHidden == true{
+                self.frontLabel.isHidden = false;
+                self.backLabel.isHidden = true;
+            } else{
+                self.backLabel.isHidden = false;
+                self.frontLabel.isHidden = true;
+            }
+        })
+    
     }
     func updateFlashCard(question: String, answer: String){
         let flashcard = Flashcard(question: question, answer: answer)
@@ -140,6 +151,31 @@ class ViewController: UIViewController {
         
     
     }
-    
+    func animateCardOut(){
+        UIView.animate(withDuration: 0.3, animations:{
+            self.card.transform = CGAffineTransform.identity.translatedBy(x: -300, y: 0)
+        }, completion: {finished in
+            self.updateLabels()
+            self.animateCardIn()})
+    }
+    func animateCardIn(){
+        card.transform = CGAffineTransform.identity.translatedBy(x: 300, y: 0)
+        UIView.animate(withDuration: 0.3) {
+            self.card.transform = CGAffineTransform.identity;
+        }
+    }
+    func animateCardOut2(){
+        UIView.animate(withDuration: 0.3, animations:{
+            self.card.transform = CGAffineTransform.identity.translatedBy(x: 300, y: 0)
+        }, completion: {finished in
+            self.updateLabels()
+            self.animateCardIn2()})
+    }
+    func animateCardIn2(){
+        card.transform = CGAffineTransform.identity.translatedBy(x: -300, y: 0)
+        UIView.animate(withDuration: 0.3) {
+            self.card.transform = CGAffineTransform.identity;
+        }
+    }
 }
 
